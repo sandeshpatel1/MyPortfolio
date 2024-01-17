@@ -1,0 +1,279 @@
+.header{
+  background-color: #1E2029;
+}
+.header.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+.home-section{
+  display: grid;
+  
+  gap: 1.0rem;
+}
+.home-section-blog{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  padding-top: 3.5rem;
+  place-items: center;
+}
+
+.social-icons {
+  width: 100%;
+  margin-top: 140px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: max-content;
+  row-gap: 1.8rem;
+  }
+  
+  .social-icons a {
+    margin: 0 18px;
+    color: #D6D6D6;
+    font-size: 24px;
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.20);
+    color: #9A6AFF;
+  }
+  .social-icons a span:hover{
+    color: #9A6AFF;
+  }
+  .social-icons a span{
+    color: #D6D6D6;
+  }
+
+  .profile-img{ 
+    margin-top: 30px;
+    order: 1;
+    display: grid;
+    place-items: center;
+  }
+
+  .profile-blob{
+    width: 140%;
+    transition: all 0.3s ease 0s
+  }
+  .img-blob{
+    height: 80px;
+    width: 80px;
+  }
+
+.personalInfo{
+  width: 100%;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 90px;
+}
+
+.Intro h1{
+  opacity: 1;
+  color: #D6D6D6;
+  font-weight: 800;
+  font-size: 38px; 
+  margin-bottom: 12px;
+}
+
+.name span{
+  color: #9A6AFF;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 12px;
+}
+
+.myJobprofile h1{
+  opacity: 1;
+  color: #9A6AFF;
+  font-weight: 700;
+  margin-top: 12px;
+  font-size: 28px;
+}
+.myDescription{
+  opacity: 1;
+  color: #D6D6D6;
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.desc-title{
+  font-weight: 500;
+  margin-top: 12px;
+  font-size: 18px;
+  color: #999;
+}
+.home-connect-btn{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 4px;
+    background: #9A6AFF;
+    width: 180px;
+    color: #fff;
+    outline: none;
+    padding: 16px 22px;
+    font-size: 18px;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+  
+  /* Example animation */
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .social-icons a-eca{
+    animation: rotateAnimation 2s linear infinite;
+  }
+
+  
+  @media screen and (max-width: 800px) {
+
+    .home-section-blog .profile-img {
+      left: 22%; /* Adjust this value to center the profile image horizontally at 800px */
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .home-section-blog .profile-img {
+      left: 17%; /* Adjust this value to center the profile image horizontally at 800px */
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .home-section-blog .profile-img {
+      left: 10%; /* Adjust this value to center the profile image horizontally at 800px */
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .home-section-blog .profile-img {
+      left: 0%; /* Adjust this value to center the profile image horizontally at 800px */
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+
+    .home-section-blog .profile-img {
+      left: -6%; /* Adjust this value to center the profile image horizontally at 800px */
+    }
+    .profile-blob{
+      width: 120%;  
+    } 
+    .personalInfo .name{
+      font-size: 28px;
+    }
+    .personalInfo .name span{
+      font-size: 36px;
+    }
+  }
+
+    
+
+  @media screen and (max-width: 900px){
+    .header {
+      width: 100%;
+      height: auto; /* Adjust the height for responsiveness */
+    }
+    
+    .home-section {
+      display: grid;
+      gap: 1.0rem;
+      justify-items: center; /* Center the content in the home-section */
+      position: relative; /* Make the home-section container relatively positioned */
+    }
+    
+    .home-section-blog {
+      padding: 0px;
+      grid-template-columns: auto;
+      align-items: center; /* Single column layout for smaller screens */
+    }
+    
+    .social-icons {
+      display: grid;
+      grid-template-columns: max-content;
+      padding-left: 12px;
+      font-size: 20px;
+      row-gap: 1;
+    }
+    
+    .social-icons a {
+      margin: 0 10px; /* Adjust the margin for social icons in smaller screens */
+      font-size: 20px; /* Decrease the font size for social icons in smaller screens */
+    }
+    
+    .profile-img {
+      margin-top: 45px;
+      position: absolute; /* Position the profile image absolutely within the relatively positioned container */
+      top: 60px; /* Adjust the top position to align with the social icons */
+      left: 24%; /* Center the profile image horizontally */
+      transform: translateX(40%); /* Adjust the transform to center the image using its own width */
+      height: 250px;
+      width: 250px;
+    }
+    
+    .personalInfo {
+      order: 1;
+      margin-top: 80px; /* Adjust the margin for personal details in smaller screens */
+      text-align: center; /* Center-align the personal details in smaller screens */
+    }
+    
+    .myDescription {
+      margin: 20px; /* Add margin to the description in smaller screens */
+      text-align: center; /* Center-align the description in smaller screens */
+    }
+    
+    .description {
+      margin-top: 12px;
+    }
+    
+    .home-connect-btn {
+      margin: 20px auto; /* Center-align the button in smaller screens */
+    }
+    
+  }
+  
+
+  .landing {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .arrow {
+    animation: bounce 2s infinite;
+    cursor: pointer;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-5px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .material-icons {
+    font-size: 60px;
+    color: #D6D6D6;
+  }

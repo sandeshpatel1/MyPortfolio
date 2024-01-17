@@ -1,0 +1,40 @@
+/* Add this CSS to your existing stylesheet or create a new one */
+
+.circular-progress {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  
+  .svg {
+    transform: rotate(-90deg);
+  }
+  
+  .svg-circle {
+    fill: transparent;
+    stroke: #f7f7f7;
+    stroke-width: 7;
+  }
+  
+  .svg-circle-progress {
+    fill: transparent;
+    stroke: #2ecc71;
+    stroke-width: 7;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease 0s;
+    transform: rotate(0.25turn);
+    transform-origin: 50% 50%;
+  }
+  
+  .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: #2ecc71;
+  }
+  

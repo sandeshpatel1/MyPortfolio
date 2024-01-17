@@ -1,0 +1,240 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust the padding as desired */
+    background-color: #1E2029;
+    z-index: 100;
+    line-height: 1;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .nav-logo{
+    text-decoration: none;
+    color: #E3E3E3;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1PX;
+  }
+  .nav-logo span{
+    color: #9A6AFF;
+  }
+  .nav-logo:hover{
+    color:#9A6AFF;
+
+  }
+  
+  .navbar-logo img {
+    width: 80px;
+    height: 80px;
+
+  }
+  
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .navbar-menu-bar {
+     width: 25px;
+     /* Set the menu bar color */
+     margin: 4px 16px 0 0;
+    cursor: pointer;
+  }
+  .nav-icon{
+    display: none;
+  }
+  
+  .navbar-items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .navbar-item {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #E3E3E3;
+     /* Add a top border to each nav item */
+     /* Add padding to the top of each nav item */
+  }
+  .navbar-item a {
+    text-decoration: none;
+    color: #E3E3E3;
+    margin: 0 18px;
+  
+  }
+
+  .navbar-item a.active {
+    color: #9A6AFF; /* Set the color for the active link */
+    font-weight: bold; /* You can adjust the style as needed */
+  }
+  
+  .navbar-item a {
+    bottom: 0px;
+    left: 50%;
+    width: 0;
+    height: 0px;
+    transition: transform 0.3s ease;/* Add left transition */
+  }
+  
+  .navbar-item a:hover{
+    color: #9A6AFF;
+    transform: scale(1.05);/* Adjust to start from the left */
+  }
+  
+
+  .navbar-item:first-child {
+    border-top: none; /* Remove the top border from the first nav item */
+    padding-top: 0; /* Remove the top padding from the first nav item */
+  }
+  
+  .navbar-resume-button {
+    display: none; /* Hide the resume button by default */
+  }
+  
+  .navbar-close-button {
+    display: none; /* Hide the close button by default */
+  }
+  
+  
+  @media screen and (min-width: 1024px) {
+    .navbar-resume-button {
+      display: block; /* Display the resume button on laptop screens */
+      background-color: #9A6AFF; /* Set the resume button color */
+      color: #E3E3E3;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      margin-right: 30px;
+    }
+  
+    .navbar-resume-button:hover {
+      background-color: #8956f9; /* Set the resume button hover color */
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .navbar {
+      width: 100%;
+      padding: 0 12px; /* Adjust the padding as desired */
+      height: 50px;
+      align-items: center;
+      position: fixed;
+      top: inherit;
+      bottom: 0;
+     
+    }
+  
+    .navbar-logo {
+      font-size: 10px;
+    }
+  
+    .navbar-menu {
+      display: flex;
+    }
+    .nav-icon{
+      display: flex;
+      
+    }
+  
+    .navbar-items {
+      position: fixed;
+      flex-direction: column;
+      top:inherit;
+      bottom: 0;
+      right: -300px;
+      width: 100%;
+      height: 220px;
+      background-color: #1a1d2b;/* Set the menu background color */
+      color: #D6D6D6;
+      list-style: none;
+      opacity: 0;
+      pointer-events: none;
+      overflow-x: hidden;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1 rem;
+      place-items: center;
+      transition: 0.1s ease;
+      padding: 35px 12px;
+      border-radius: 25px 25px 0px 0px;
+    }
+    
+    .navbar-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    }
+    
+  
+    .navbar-items.open {
+      right: 0;
+      opacity: 1;
+      align-items: flex-start;
+      pointer-events: auto;
+    }
+  
+    .navbar-item {
+      font-size: 14px;
+      border-top: none;
+      padding-top: 0;
+    }
+  
+    .navbar-resume-button {
+      display: none;
+    }
+    .navbar-close-button {
+        display: block; /* Display the close button when menu is open */
+        position: absolute;
+        right: 0px;
+        width: 80px;
+        height: 50px;
+        background-color: transparent;
+        filter: invert(1);
+        cursor: pointer;
+        transition: 0.3;
+        color: #9A6AFF;
+      }
+    
+    
+.navbar-close-button::before,
+.navbar-close-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: black; /* Set the color of the lines */
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.navbar-close-button::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.navbar-close-button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: all 0.3s ease;
+}
+}

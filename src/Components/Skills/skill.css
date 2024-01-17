@@ -1,0 +1,430 @@
+.skills-section {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+.section-header {
+  margin-top: 20px;
+  color: #f7f7f7;
+  font-size: 2rem !important;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.skills-box {
+  gap: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(237, 239, 239);
+  width: 200px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skills-box:hover {
+  background-color: #9A6AFF; /* Change to the desired hover color */
+  transform: scale(1.06);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.skill-container-2{
+  margin-top: 40px;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f7f7f7;
+  background: none;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.skill-container-2{
+  display: flex;
+  flex-direction: row;
+  place-content: space-around;
+}
+
+/* SOFT SKILL SECTION*/
+
+.skills-box-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.skills-box-soft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(237, 239, 239);
+  width: 100%;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.skills-box-soft:hover{
+  background-color: #9A6AFF; /* Change to the desired hover color */
+  transform: scale(1.06);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.skills-box-soft:first-child{
+  background-color: #9A6AFF;
+}
+.skills-box-soft:first-child:hover{
+  background-color: rgb(237, 239, 239);
+  transform: scale(1.06);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.skills-box-soft:nth-child(4){
+  background-color: #9A6AFF;
+}
+.skills-box-soft:nth-child(4):hover{
+  background-color: rgb(237, 239, 239);
+  transform: scale(1.06);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* LEETCODE SOFT SKILL SECTION */
+.leetcode-stats-container{
+  margin-top: 30px;
+}
+
+.leetcode-stats {
+  color: #333;
+  width: 420px;
+  height: 250px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  padding-top: 16px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.leetcode-stats:hover{
+  background-color: #fff; /* Change to the desired hover color */
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.leetcode-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 12px;
+}
+.leet-right-p{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: #333;
+}
+
+.box-header-2{
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: orange;
+}
+.box-head-title{
+  color: black;
+}
+
+
+.leetcode-head a{
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+.head span{
+  font-size: 30px;
+  margin-left: 12px;
+}
+.head p{
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: 6px;
+
+}
+.leet-body{
+  display: flex;
+  align-items: center;
+  place-content: space-around;
+  margin-top: 10px;
+}
+
+.leet-solved{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.Circle{
+  height: 100px;
+  width: 100px;
+}
+.circle-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    position: absolute;
+}
+.circle-text span{
+  font-size: 12px;
+  color: #777;
+}
+
+.leet-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pro-title{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.leet-username {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+ 
+.leet-cat{
+  width: 200px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.stat-all{
+  font-size: 12px;
+  color: #777;
+}
+.stat-all span{
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+.box-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Soft Skills*/
+
+.soft-skills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9c27b0; /* Purple background color */
+  border-radius: 12px;
+  width: 420px;
+  height: 230px;
+}
+
+.Soft-Skill-box {
+  margin-top: 20px;
+  color: #fff; /* White text color */
+  margin-bottom: 20px;
+}
+
+.box-header-soft {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.Soft-Skill-detial {
+  color: #fff; /* White text color */
+  display: flex;
+  align-items: center;
+  place-self: flex-start;
+}
+
+.Soft-Skill-detial p {
+  margin-left: 6px;
+}
+
+.Skill-box-detail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  place-self: flex-start;
+  gap: 10px;
+  margin-left: 12px;
+}
+
+.line {
+  margin-left: 6px;
+  height: 3px;
+  width: 200px;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .soft-skills,
+  .leetcode-stats {
+    width: 80%;
+  }
+
+  .skills-box-container {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .leetcode-stats-container .leetcode-stats {
+    align-items: center;
+    width: 320px; /* Adjust maximum width for smaller screens */
+  }
+  .leetcode-stats-container .leet-title span {
+    font-size: 16px; /* Adjust the font size for the heading */
+  }
+
+  .leetcode-head .leet-username {
+    font-size: 16px; /* Adjust the font size for the username */
+    margin-left: 4px;
+  }
+  .leet-right-p{
+    font-size: 14px;
+  }
+
+  .leet-cat {
+    width: 160px; /* Adjust the width for the category container */
+  }
+
+  .stat-all {
+    font-size: 8px; /* Adjust the font size for the statistics */
+  }
+
+  .circle-text {
+    font-size: 16px; /* Adjust the font size for the text inside the circle */
+  }
+
+  .Circle {
+    height: 80px; /* Adjust the height of the circle */
+    width: 80px; /* Adjust the width of the circle */
+  }
+  .skill-container-2 .box-header-soft{
+    font-size: 9px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .skill-container-2{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-box {
+    width: 80%;
+  }
+
+  .skill {
+    align-items: flex-start;
+  }
+
+  .skill-info {
+    align-items: flex-start;
+  }
+
+  .skill-name {
+    text-align: left;
+  }
+
+  .skill-container-2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-box-container{
+    order: 2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  .skills-box-soft{
+    gap: 6px;
+    width: 90%;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .box-header-soft{
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .leetcode-stats {
+    align-items: center;
+    width: 350px; /* Adjust maximum width for medium screens */
+  }
+  
+  .leet-body{
+    place-items: space-between;
+  }
+}
