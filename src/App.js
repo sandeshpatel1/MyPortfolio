@@ -1,7 +1,8 @@
 import './App.css';
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ToastProvider } from 'react-toast-notifications';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Home from './Components/Home';
 import Project from "./Components/Project";
 import About from './Components/About';
@@ -14,7 +15,8 @@ import Navbar from './Components/Navbar';
 function App() {
   return (
     <BrowserRouter>
-      <ToastProvider>
+     <ToastContainer />
+      <div>
         <Navbar />
         <Routes>
           <Route
@@ -32,7 +34,9 @@ function App() {
             }
           />
         </Routes>
-      </ToastProvider>
+      </div>
+      {/* ToastContainer to display toast messages */}
+      
     </BrowserRouter>
   );
 }

@@ -7,3 +7,25 @@
   box-sizing: border-box;
   
 }
+
+/* Default styles for toasts */
+.Toastify__toast-container {
+  width: auto;
+  padding: 8px;
+}
+
+.Toastify__toast {
+  font-size: 14px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .Toastify__toast-container {
+    width: 80%; /* Adjust the width as needed */
+    padding: 4px; /* Adjust the padding as needed */
+  }
+
+  .Toastify__toast {
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+}
