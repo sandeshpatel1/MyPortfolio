@@ -2,10 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import './skill.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact, FaNodeJs, FaDatabase, FaJava, FaGithub } from 'react-icons/fa';
-import { MdWork } from 'react-icons/md';
 import { SiLeetcode } from "react-icons/si";
 import { Line, Circle } from 'rc-progress';
-import {ListTodo, Speech, LibraryBig, MonitorCheck, ShieldCheck} from 'lucide-react';
+import {Speech, LibraryBig, MonitorCheck, ShieldCheck} from 'lucide-react';
 
 
 

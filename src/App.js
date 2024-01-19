@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {HashRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Home from './Components/Home';
@@ -14,7 +14,7 @@ import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
      <ToastContainer />
       <div>
         <Navbar />
@@ -37,7 +37,7 @@ function App() {
       </div>
       {/* ToastContainer to display toast messages */}
       
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

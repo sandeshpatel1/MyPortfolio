@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Contact/contact.css';
-import { MdMail, MdSend , MdLocationOn} from 'react-icons/md';
+import { MdMail, MdLocationOn} from 'react-icons/md';
 import {SendHorizontal} from "lucide-react";
 
 const Contact = () => {

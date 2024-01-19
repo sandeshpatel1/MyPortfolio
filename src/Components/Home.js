@@ -3,8 +3,6 @@ import "../Components/Home.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaEnvelope, FaInstagram } from "react-icons/fa";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import Resume from "../Assets/Resume.pdf";
 import { TypeAnimation } from "react-type-animation";
 import { SendHorizontal } from "lucide-react";
 

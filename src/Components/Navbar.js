@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { useLocation } from 'react-router-dom';
-import logo from '../Images/logo.png';
 import resume from '../Assets/Resume.pdf';
 import './Navbar.css';
 import {LayoutGrid, Home, Laptop, UserRound, Mail,FileCode2 } from  "lucide-react";
