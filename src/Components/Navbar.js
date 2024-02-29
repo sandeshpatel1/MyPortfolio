@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
       <div className="navbar-logo" onClick={scrollToTop}>
-        <a href className='nav-logo'>
+        <a href='/' className='nav-logo'>
         <span>S</span>
             ANDESH
         </a>
