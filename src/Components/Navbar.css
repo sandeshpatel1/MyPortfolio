@@ -145,7 +145,9 @@
       position: fixed;
       top: inherit;
       bottom: 0;
-     
+      background-color: #1a1d2b;
+      z-index: 100;
+      border-radius: 0px;
     }
   
     .navbar-logo {
