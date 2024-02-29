@@ -7,7 +7,7 @@
 }
 .home-section{
   display: grid;
-  
+
   gap: 1.0rem;
 }
 .home-section-blog{
@@ -20,7 +20,7 @@
 
 .social-icons {
   width: 100%;
-  margin-top: 140px;
+  margin-top: 60px;
   display: grid;
   place-items: center;
   grid-template-columns: max-content;
@@ -46,17 +46,19 @@
   }
 
   .profile-img{ 
-    margin-top: 30px;
+    margin-top: 40px;
     order: 1;
     display: grid;
     place-items: center;
   }
 
   .profile-blob{
+    
     width: 140%;
     transition: all 0.3s ease 0s
   }
   .img-blob{
+    margin-top: 60px;
     height: 80px;
     width: 80px;
   }
@@ -72,7 +74,7 @@
   opacity: 1;
   color: #D6D6D6;
   font-weight: 800;
-  font-size: 38px; 
+  font-size: 40px; 
   margin-bottom: 12px;
 }
 
@@ -88,20 +90,20 @@
   color: #9A6AFF;
   font-weight: 700;
   margin-top: 12px;
-  font-size: 28px;
+  font-size: 34px;
 }
 .myDescription{
   opacity: 1;
-  color: #D6D6D6;
-  margin-top: 12px;
+  color: #fff;
+  margin-top: 14px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .desc-title{
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 12px;
-  font-size: 18px;
-  color: #999;
+  font-size: 20px;
+  color: #fff;
 }
 .home-connect-btn{
     display: flex;

@@ -87,9 +87,11 @@ const Contact = () => {
         <div className="contact-left">
           <div className="contact-info">
             <p className="info-text">
-              I am currently probably napping or building something amazing.
-              Feel free to drop a message for any suggestion or collaboration,
-              and we can get in touch. 
+            
+
+While I may be caught up in the midst of creativity or enjoying a well-deserved break,
+ I'm always open to new ideas and collaborations. Your message is a welcomed opportunity for us to
+  connect and explore potential ventures together. Don't hesitate to leave a note, and I'll be sure to get back to you as soon as possible. 
             </p>
             <div className="contact-details">
               <div className="detail-item">
@@ -98,7 +100,7 @@ const Contact = () => {
               </div>
               <div className="detail-item">
                 <MdLocationOn className="detail-icon" />
-                <span className="detail-text">India</span>
+                <span className="detail-text">Mumbai, India</span>
               </div>
             </div>
           </div>

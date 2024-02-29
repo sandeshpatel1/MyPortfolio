@@ -140,9 +140,9 @@ const Home = () => {
                   <TypeAnimation
                     sequence={[
                       // Same String at the start will only be typed once, initially
-                      "Front-End Developer",
+                      "Front End Developer",
                       1000,
-                      "ReactJs Developer",
+                      "ReactJS Developer",
                       1000,
                     ]}
                     speed={30}

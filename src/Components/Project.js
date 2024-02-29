@@ -142,7 +142,7 @@ const Project = () => {
           }`}
           onClick={() => handleFilterClick('HTML/CSS')}
         >
-          HTML/CSS
+          HTML | CSS
         </div>
       </div>
       <div className="project-container">
