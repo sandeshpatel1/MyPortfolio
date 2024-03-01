@@ -7,22 +7,9 @@ import { TypeAnimation } from "react-type-animation";
 import { SendHorizontal } from "lucide-react";
 
 const Home = () => {
-  // const [loading, setLoading] = useState(true); // State to track loading status
-  // const [data, setData] = useState(null); // State to hold fetched data
-
+  
    useEffect(() => {
-  //   const fetchData = () => {
-  //     setTimeout(() => {
-  //       // Once data is fetched, update loading status and data
-  //       setLoading(false);
-  //       // Replace the following line with your actual data fetching logic
-  //       setData({ /* your fetched data */ });
-  //     }, 2000); // Simulate 2 seconds delay
-  //   };
-
-  //   // Call fetchData function
-  //   fetchData();
-
+  
     // Scroll animation setup
     const HomeSection = document.querySelector(".header");
 
